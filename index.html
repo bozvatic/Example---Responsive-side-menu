@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Side Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+        <div class="tekst">
+            <h1>Prvi naslovni tekst</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nostrum suscipit ad, deleniti corporis culpa minima similique magni! Odio libero at tempora et similique labore pariatur repudiandae harum a! Ipsam laudantium maiores
+                excepturi aliquam. Natus, exercitationem! Suscipit possimus ex, ullam error illum, modi laborum ducimus ratione alias commodi placeat laboriosam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae necessitatibus aspernatur quae voluptates, facere, vero dicta eveniet praesentium ipsam nihil commodi, quia fuga quod corrupti exercitationem velit ab! Ipsam inventore
+                officia quasi architecto nesciunt amet accusamus nemo perferendis, repudiandae dicta quis ipsum harum tempora odio adipisci repellendus neque illum.</p>
+        </div>
+        <div class="tekst">
+            <h1>Drugi naslovni tekst</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nostrum suscipit ad, deleniti corporis culpa minima similique magni! Odio libero at tempora et similique labore pariatur repudiandae harum a! Ipsam laudantium maiores
+                excepturi aliquam. Natus, exercitationem! Suscipit possimus ex, ullam error illum, modi laborum ducimus ratione alias commodi placeat laboriosam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae necessitatibus aspernatur quae voluptates, facere, vero dicta eveniet praesentium ipsam nihil commodi, quia fuga quod corrupti exercitationem velit ab! Ipsam inventore
+                officia quasi architecto nesciunt amet accusamus nemo perferendis, repudiandae dicta quis ipsum harum tempora odio adipisci repellendus neque illum.</p>
+        </div>
+        <div class="tekst">
+            <h1>Treci naslovni tekst</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nostrum suscipit ad, deleniti corporis culpa minima similique magni! Odio libero at tempora et similique labore pariatur repudiandae harum a! Ipsa laudantium maiores excepturi
+                aliquam. Natus, exercitationem! Suscipit possimus ex, ullam error illum, modi laborum ducimus ratione alias commodi placeat laboriosam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae necessitatibus aspernatur quae voluptates, facere, vero dicta eveniet praesentium ipsam nihil commodi, quia fuga quod corrupti exercitationem velit ab! Ipsam inventore
+                officia quasi architecto nesciunt amet accusamus nemo perferendis, repudiandae dicta quis ipsum harum tempora odio adipisci repellendus neque illum.</p>
+        </div>
+        <div class="forma">
+            <fieldset>
+                <legend>Prva i glavna forma</legend>
+                <br>
+                <label for="username">Username: <br><input type="text" placeholder="Username..." required></label>
+                <br><br>
+                <label for="password">Password: <br><input type="password" placeholder="Password..." required></label>
+                <br><br>
+                <label for="email">E-mail: <br><input type="text" placeholder="Email..." required></label>
+                <br><br>
+                <label for="phone">Telephone: <br><input type="text" placeholder="Phone..."></label>
+                <br><br>
+                <label for="submit"><input type="submit"></label>
+                <br><br>
+                <label for="search">
+                  <input type="search" placeholder="Search...">
+                  <input type="submit" value="Search...">
+                </label>
+            </fieldset>
+        </div>
+        <br><br>
+        <div class="forma">
+            <iframe width="600" height="400" src="http://maps.google.co.uk/maps?q=moma+new+york
+            &amp;output=embed">
+            </iframe>
+        </div>
+
+    </div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '300px';
+            document.getElementById('main').style.marginLeft = '300px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+    </script>
+</body>
+
+</html>
