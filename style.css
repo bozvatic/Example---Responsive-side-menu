@@ -1,138 +1,139 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
 body {
-    font-family: "Arial", Serif;
-    background-color: #f4f4f4;
-    overflow-x: hidden;
-    font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: 'Arial', Serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  font-family: 'Encode Sans Condensed', sans-serif;
 }
 
 .navbar {
-    background-color: #3b5998;
-    overflow: hidden;
-    height: 63px;
+  background-color: #3b5998;
+  overflow: hidden;
+  height: 63px;
 }
 
 .navbar .open-slide a:hover {
-    background-color: black;
-    transition: 1s;
+  background-color: black;
+  transition: 1s;
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 p {
-    white-space: normal;
+  white-space: normal;
 }
 
 .navbar ul {
-    margin: 8px 0 0 0;
-    list-style: none;
+  margin: 8px 0 0 0;
+  list-style: none;
 }
 
 .navbar a:hover {
-    transition: 1s;
-    background-color: #ddd;
-    color: #000;
+  transition: 1s;
+  background-color: #ddd;
+  color: #000;
 }
 
 .side-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    opacity: 0.9;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 1s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 1s;
 }
 
 fieldset {
-    width: 40%;
-    text-align: center;
-    background: url(photo.jpeg) center center;
-    color: black;
-    box-shadow: 5px 10px 18px #888888;
-    ;
+  width: 40%;
+  text-align: center;
+  background: url(photo.jpeg) center center;
+  color: black;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 input {
-    width: 60%;
-    height: 40px;
+  width: 60%;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 10px;
+  outline: none;
 }
 
-input[type=submit] {
-    width: 30%;
-    height: 40px;
-    cursor: pointer;
-    border-radius: 10px;
+input[type='submit'] {
+  width: 30%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .forma {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 /* .tekst {
     margin-right: 3rem;
 } */
 
 .side-nav a {
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #ccc;
-    display: block;
-    transition: 0.3s;
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
 }
 
 .side-nav a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .side-nav .btn-close {
-    position: absolute;
-    top: 0;
-    right: 22px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 #main {
-    transition: margin-left 1s;
-    padding: 20px;
-    overflow: hidden;
-    width: 100%;
+  transition: margin-left 1s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
 }
 
-@media(max-width:568px) {
-    .navbar-nav {
-        display: none
-    }
-    fieldset {
-        width: 80%;
-    }
-    input {
-        width: 70%;
-    }
-    input[type=submit] {
-        width: 40%;
-    }
-    input[type=search] {
-        margin-bottom: 1rem;
-    }
-}
-
-@media(min-width:568px) {
-    /*.open-slide{display:none}*/
+@media (max-width: 568px) {
+  .navbar-nav {
+    display: none;
+  }
+  fieldset {
+    width: 80%;
+  }
+  input {
+    width: 70%;
+  }
+  input[type='submit'] {
+    width: 40%;
+  }
+  input[type='search'] {
+    margin-bottom: 1rem;
+  }
+  .forma {
+    max-width: 100%;
+    margin: 0px 20px;
+  }
 }
